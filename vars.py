@@ -13,7 +13,7 @@ def is_enabled(value, default):
 SESSION = environ.get("SESSION", "N2 Auto Reply Bot")
 API_ID = 28379294
 API_HASH = "f586b601ced6eeed819b280d6a9bc8eb"
-USER_SESSION = environ.get("USER_SESSION", "BQGcAJsALR1kVjaDHPOdtpl7ueK01wbehgiK07TxSXu5T1bQEqrE4IQe118uRM_TRaWMyAfC-9RTSGw4dqOyhgZZnD5vkOp526oyRCuB5zHhbpH3mysE6JqKCwOXH8DlX-08b_6FrKmreOBX7P3unnEKIjInODSdoqfa9nppbCqjIURPZx9xdC1QMCpkT9tBE6DZkz6hIx5lhYMgMf46_tf8___9t4FmTw9GK0gXI9osfhK1ZQ7IFHjRCDxjORNc4Jm7WY8k4Bukc1pq3aER0KlkMvxZPoQKJIr8jxjMFZujwS56xAsJJw29L3EE8X4wLLPjYV8OEUs_SaFpK3GIYLPvT8hQnQAAAAF33rosAA")
+USER_SESSION = environ.get("USER_SESSION", "BQGV2YgAXLfe08g0ytXRDkDEiDriFIBK4IijBWTJlqMZrRiUBsB8kf6DRxE_EIA0LtqaOqFPJiXvwvpEDB8KyqDBgEaeEYEjzNvBvlrYaqOzuSxvQz8F6nFJBHIg4fTFllkxP617Mb1SLeeehDsNbSr7XMcBqNR_4XWM-2kM518RQzyjqKFccQ6eZZmHVFFKXg3uuJpucnpPbe1N9Y6QAonNP3jcFVhAAhXDghkvj1SIBOfANaJxE9akIG40JDsIcXCZ50DPlpvShICCpPOTQ1g5ja4Hi747kH9mgvthMw9iWrKrCrjI4GedSilMZMutrG1UZ9qZze8YlFeQXfUj98HOfceDiAAAAAHYPVj0AA")
 LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1003184409377"))
 FROM_GRP = [int(channel_id) for channel_id in environ.get('FROM_GRP', '-1001629066592').split() if re.match(r'^-?\d+$', channel_id)]
 PORT = int(environ.get("PORT", "8080"))
