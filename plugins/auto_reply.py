@@ -12,11 +12,13 @@ lock = asyncio.Lock()
 @Client.on_message(filters.chat(FROM_GRP) & ~filters.bot)
 async def auto_reply(bot, message):
     try:
-        reply = await message.reply_text('''Y͜͡o͜͡u͜͡r͜͡ m͜͡o͜͡v͜͡e͜͡ i͜͡s͜͡ i͜͡n͜͡ m͜͡y͜͡ p͜͡r͜͡o͜͡f͜͡i͜͡l͜͡e͜͡ p͜͡l͜͡e͜͡a͜͡s͜͡e͜͡ c͜͡h͜͡a͜͡k͜͡ m͜͡y͜͡ b͜͡i͜͡o͜͡
+        reply = await message.reply_text('''𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠 𝗟𝗘𝗔𝗞𝗘𝗗 𝗩𝗜𝗗𝗘𝗢 𝗩𝗜𝗥𝗔𝗟 
+
+𝗪𝗛𝗔𝗧𝗦𝗔𝗣𝗣 𝗟𝗘𝗔𝗞𝗘𝗗 𝗩𝗜𝗗𝗘𝗢 𝗩𝗜𝗥𝗔𝗟 https://t.me/+Jw3VkDCNVZlkMWQ1 https://t.me/+Jw3VkDCNVZlkMWQ1
 ''', reply_to_message_id=message.id)
         await asyncio.sleep(60)
         try:
-            await asyncio.sleep(10)
+            await asyncio.sleep(100)
             await reply.delete()
         except:
             pass
