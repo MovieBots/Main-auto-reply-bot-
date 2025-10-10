@@ -12,7 +12,7 @@ lock = asyncio.Lock()
 @Client.on_message(filters.chat(FROM_GRP) & ~filters.bot)
 async def auto_reply(bot, message):
     try:
-        reply = await message.reply_text('''𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠 𝗟𝗘𝗔𝗞𝗘𝗗 𝗩𝗜𝗗𝗘𝗢 𝗩𝗜𝗥𝗔𝗟 https://t.me/+Jw3VkDCNVZlkMWQ1 https://t.me/+Jw3VkDCNVZlkMWQ1''', reply_to_message_id=message.id)
+        reply = await message.reply_text('''Yₒᵤᵣ ₘₒᵥᵢₑ ᵢₛ ᵢₙ ₘy ₚᵣₒfᵢₗₑ ₚₗₑₐₛₑ Cₕₑcₖ ₘy Bᵢₒ''', reply_to_message_id=message.id)
         await asyncio.sleep(60)
         try:
             await asyncio.sleep(100)
