@@ -17,5 +17,5 @@ USER_SESSION = environ.get("USER_SESSION", "BQGcAJsALR1kVjaDHPOdtpl7ueK01wbehgiK
 LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1003184409377"))
 FROM_GRP = [int(channel_id) for channel_id in environ.get('FROM_GRP', '-1001629066592').split() if re.match(r'^-?\d+$', channel_id)]
 PORT = int(environ.get("PORT", "8080"))
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6886502911').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6306052652').split()]
 UPSTREAM_REPO = environ.get("UPSTREAM_REPO", "https://github.com/MovieBots/Auto-Reply-Bot")
