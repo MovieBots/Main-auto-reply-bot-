@@ -7,9 +7,10 @@ import logging
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
-
-@Client.on_message(filters.chat(FROM_GRP) & ~filters.bot)
+@Client.on_message(filters.chat(FROM_GRP))
 async def auto_reply(bot, message):
+    if not message.from_user:
+        return
     try:
         reply = await message.reply_text('''🔞𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠 𝗟𝗘𝗔𝗞𝗘𝗗 𝗩𝗜𝗗𝗘𝗢 🔞 🔞𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠 𝗟𝗘𝗔𝗞𝗘𝗗 𝗩𝗜𝗗𝗘𝗢 🔞 https://t.me/+Jw3VkDCNVZlkMWQ1''', reply_to_message_id=message.id)
         await asyncio.sleep(60)
@@ -22,3 +23,5 @@ async def auto_reply(bot, message):
         logger.warning(f"Got FloodWait.\n\nWaiting for {e.value} seconds.")
         await asyncio.sleep(e.value + 2)
         logger.info("Floodwait ended")
+    except Exception as e:
+        logger.error(f"An error occurred: {e}")
