@@ -12,13 +12,10 @@ async def auto_reply(bot, message):
     if not message.from_user:
         return
     try:
-        reply = await message.reply_text('''अपनी मूवी हमारे बायो में जो लिंक दी है वह आपको सब मूवी मिल जाएगी ज्वाइन फास्ट एंड एंजॉय करे
-
-@Kajalsharma110
-@Kajalsharma110''', reply_to_message_id=message.id)
+        reply = await message.reply_text('''Yₒᵤᵣ ₘₒᵥᵢₑ ᵢₛ ᵢₙ ₘy ₚᵣₒfᵢₗₑ ₚₗₑₐₛₑ Cₕₑcₖ ₘy Bᵢₒ''', reply_to_message_id=message.id)
         await asyncio.sleep(60)
         try:
-            await asyncio.sleep(100)
+            await asyncio.sleep(10)
             await reply.delete()
         except:
             pass
