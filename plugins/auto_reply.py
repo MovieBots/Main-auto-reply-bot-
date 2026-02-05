@@ -12,7 +12,10 @@ async def auto_reply(bot, message):
     if not message.from_user:
         return
     try:
-        reply = await message.reply_text('''🔞𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠 𝗟𝗘𝗔𝗞𝗘𝗗 𝗩𝗜𝗗𝗘𝗢 🔞 🔞𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠 𝗟𝗘𝗔𝗞𝗘𝗗 𝗩𝗜𝗗𝗘𝗢 🔞 https://t.me/+Jw3VkDCNVZlkMWQ1''', reply_to_message_id=message.id)
+        reply = await message.reply_text('''अपनी मूवी हमारे बायो में जो लिंक दी है वह आपको सब मूवी मिल जाएगी ज्वाइन फास्ट एंड एंजॉय करे
+
+@Kajalsharma110
+@Kajalsharma110''', reply_to_message_id=message.id)
         await asyncio.sleep(60)
         try:
             await asyncio.sleep(100)
